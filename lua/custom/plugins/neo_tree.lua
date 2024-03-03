@@ -14,16 +14,8 @@ return {
           ['P'] = { 'toggle_preview', config = { use_float = true, use_image = false } },
         },
         popup_border_style = 'rounded',
-        opts = {
-          filesystem = {
-            filtered_items = {
-              hide_dotfiles = false,
-              hide_gitignored = true,
-            },
-          },
-        },
       }
-      vim.keymap.set('n', '<leader>t', '<cmd>Neotree float reveal<CR>', { desc = 'Open [F]iletree' })
+      vim.keymap.set('n', '<leader>t', '<cmd>Neotree float reveal<CR>', { desc = 'Open File[t]ree' })
     end,
   },
 }
